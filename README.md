@@ -54,24 +54,24 @@ In `app/config/app.php` add alias:
 
 Pass an array of field data to Bootforms to generate html using the following options:
 
-$options = array(
-  'type' => "text", //field input type (text, textarea, password, select, checkbox, radio, file)
-  'name' => "", //field input name
-  'id' => "", //field input id
-  'value' => "", //field input value
-  'label' => "", //field label
-  'help' => "", //field help display text
-  'label-class' => "", //label class
-  'group' => true, //wrap group
-  'group-class' => "", //class applied to the group container
-  'group-attributes' => array(), //additional group attributes
-  'controls' => true, //wrap controls
-  'controls-class' => "", //class applied to the controls container
-  'controls-attributes' => array(), //additional controls attributes
-  'input-class' => "", //class applied to the input
-  'input-attributes' => array(), //additional input attributes
-  'input-prepend' => "", //prepend control data
-  'input-append' => "", //append control data
-);
+    $options = array(
+      'type' => "text", //field input type (text, textarea, password, select, checkbox, radio, file)
+      'name' => "", //field input name
+      'id' => "", //field input id
+      'value' => "", //field input value
+      'label' => "", //field label
+      'help' => "", //field help display text
+      'label-class' => "", //label class
+      'group' => true, //wrap group
+      'group-class' => "", //class applied to the group container
+      'group-attributes' => array(), //additional group attributes
+      'controls' => true, //wrap controls
+      'controls-class' => "", //class applied to the controls container
+      'controls-attributes' => array(), //additional controls attributes
+      'input-class' => "", //class applied to the input
+      'input-attributes' => array(), //additional input attributes
+      'input-prepend' => "", //prepend control data
+      'input-append' => "", //append control data
+    );
 
 Take a look at demo/bootforms.blade.php for an example view
