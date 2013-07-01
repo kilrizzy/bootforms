@@ -1,0 +1,26 @@
+{
+    "name": "kilrizzy/bootforms",
+    "type": "library",
+    "description": "Generate HTML form structure for use with Twitter Bootstrap",
+    "keywords": ["laravel","bootstrap","forms"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Jeff Kilroy",
+            "email": "mail@jeffkilroy.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Kilrizzy\\Bootforms": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
