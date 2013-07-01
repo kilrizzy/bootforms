@@ -5,20 +5,30 @@ Bootstrap form field generator for Laravel 4. Bootforms will add "controls", lab
 Turning This:
 
     {{ Bootform::field(array(
-  	'label'       => "Email Address",
-		'name'        => "email",
-		'input-prepend' => '<i class="icon-envelope"></i>',
-		'input-attributes' => array('placeholder' => "example@example.com"),
-		'input-class' => "input-large"
+      'label'       => "Full Name",
+      'name'        => "name",
+    )) }}
+    {{ Bootform::field(array(
+    	'label'       => "Email Address",
+  		'name'        => "email",
+  		'input-prepend' => '<i class="icon-envelope"></i>',
+  		'input-attributes' => array('placeholder' => "example@example.com"),
+  		'input-class' => "input-large"
 	  )) }}
 
 Into This:
 
-    <div class="control-group field-group-text control-group-email">
-      <label for="email" class="control-label">Email Address</label>
-
-      <div class="controls input-prepend">
-        <input class="input-large" placeholder="example@example.com" name="email" type="text" value="" />
+    <div class="control-group field-group-text control-group-name">
+      <label for="name" class="control-label ">Full Name</label>
+      <div class="controls" >
+        <input class="" name="name" type="text" value="">
+      </div>
+    </div>
+    <div class="control-group  field-group-text control-group-email">
+      <label for="email" class="control-label ">Email Address</label>
+      <div class="controls input-prepend" >
+        <span class="add-on"><i class="icon-envelope"></i></span>
+        <input class="input-large" placeholder="example@example.com" name="email" type="text" value="">
       </div>
     </div>
     
@@ -42,6 +52,26 @@ In `app/config/app.php` add alias:
     
 ## Usage
 
-Pass an array of field data to Bootforms to generate html.
+Pass an array of field data to Bootforms to generate html using the following options:
 
-## Demo
+$options = array(
+  'type' => "text", //field input type (text, textarea, password, select, checkbox, radio, file)
+  'name' => "", //field input name
+  'id' => "", //field input id
+  'value' => "", //field input value
+  'label' => "", //field label
+  'help' => "", //field help display text
+  'label-class' => "", //label class
+  'group' => true, //wrap group
+  'group-class' => "", //class applied to the group container
+  'group-attributes' => array(), //additional group attributes
+  'controls' => true, //wrap controls
+  'controls-class' => "", //class applied to the controls container
+  'controls-attributes' => array(), //additional controls attributes
+  'input-class' => "", //class applied to the input
+  'input-attributes' => array(), //additional input attributes
+  'input-prepend' => "", //prepend control data
+  'input-append' => "", //append control data
+);
+
+Take a look at demo/bootforms.blade.php for an example view
