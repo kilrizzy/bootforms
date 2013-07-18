@@ -99,7 +99,7 @@ class Bootform{
         if($field['type'] == "checkbox"){
             foreach($field['options'] as $option_key=>$option_value){
                 $output .= '<label class="checkbox">';
-                    $checked = false;
+                    $checked = null;
                     if(is_array($field['value']) && in_array($option_key, $field['value'])){
                         $checked = true;
                     }
