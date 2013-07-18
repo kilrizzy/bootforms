@@ -44,7 +44,7 @@ Run `composer update` to pull down the latest version of Bootforms.
 
 Open `app/config/app.php` and add service provider:
 
-    'kilrizzy\bootforms\BootformsServiceProvider',
+    'Kilrizzy\Bootforms\BootformsServiceProvider',
 
 In `app/config/app.php` add alias:
 
