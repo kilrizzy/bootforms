@@ -123,7 +123,7 @@ class Bootform{
         }
         //FILE
         if($field['type'] == "file"){
-            $output .= Form::file($o['name']);
+            $output .= Form::file($field['name'],$input_attributes);
         }
         //return
         return $output;
