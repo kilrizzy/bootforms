@@ -9,7 +9,6 @@ class BootformsFacade extends Facade {
 *
 * @return string
 */
-//WTF do i need this
 protected static function getFacadeAccessor() { return 'bootforms'; }
 
 }
