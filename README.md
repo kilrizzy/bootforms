@@ -1,3 +1,9 @@
+##Heads Up!
+
+I built this package as a helper to make my projects easier, since then I have found a package that seems to do what bootforms aims for and much more. 
+
+I highly recommend taking a peek at [Anahkiasen/former](https://github.com/Anahkiasen/former) to see if this better suits your project
+
 # Bootforms
 
 Bootstrap form field generator for Laravel 4. Bootforms will add "controls", labels, and "group" html elements to your form fields to make integration with Bootstrap quicker and easier.
