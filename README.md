@@ -81,3 +81,7 @@ Pass an array of field data to Bootforms to generate html using the following op
     );
 
 Take a look at demo/bootforms.blade.php for an example view
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kilrizzy/bootforms/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
